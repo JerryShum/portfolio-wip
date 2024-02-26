@@ -47,7 +47,7 @@ function Intro() {
           Portfolio
         </h1>
       </div>
-      <div className="h-screen flex bg-gray-50 justify-center place-items-center">
+      <div className="h-screen flex bg-Beigeish(BG)-Normal justify-center place-items-center">
         <h1
           className="text-9xl font-bold text-gray-900 font-spaceGrotesk"
           id="welcome"
