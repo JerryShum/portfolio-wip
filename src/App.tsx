@@ -1,4 +1,4 @@
-import Intro from "./intro";
+import Intro from "./Intro";
 
 function App() {
   return (
