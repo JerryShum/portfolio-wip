@@ -1,9 +1,9 @@
-import Intro from "./Intro";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div>
-      <Intro />
+      <Hero />
     </div>
   );
 }

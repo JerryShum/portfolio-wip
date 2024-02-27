@@ -2,11 +2,10 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-function Intro() {
-  const comp = useRef(null);
+function Hero() {
+  const welcome = useRef(null);
   //Creates a reference for the root level element (used for scoping)
 
-  // uselayouteffect triggers after all the dom mutations happens
   useGSAP(
     () => {
       const t1 = gsap.timeline();
@@ -26,16 +25,16 @@ function Intro() {
         duration: 0.7,
       });
 
-      t1.from("#welcome", {
+      t1.from("#heading", {
         opacity: 0,
         duration: 1.5,
       });
     },
-    { scope: comp }
+    { scope: welcome }
   );
 
   return (
-    <div className="relative" ref={comp}>
+    <div className="relative" ref={welcome}>
       <div
         id="intro-slider"
         className="h-screen w-screen p-10 bg-gray-900 text-gray-200 absolute top-0 left-0 font-spaceGrotesk z-10 flex flex-col gap-10 tracking-tight items-center justify-center"
@@ -47,16 +46,20 @@ function Intro() {
           Portfolio
         </h1>
       </div>
-      <div className="h-screen flex bg-Beigeish(BG)-Normal justify-center place-items-center">
+
+      <div
+        className=" w-screen h-screen bg-Beigeish(BG)-Normal flex flex-col justify-center"
+        ref={welcome}
+      >
         <h1
-          className="text-9xl font-bold text-gray-900 font-spaceGrotesk"
-          id="welcome"
+          className=" text-9xl text-Charcoal(Text)-Normal font-bold text-center"
+          id="heading"
         >
-          Hello World!
+          Portfolio Page
         </h1>
       </div>
     </div>
   );
 }
 
-export default Intro;
+export default Hero;
