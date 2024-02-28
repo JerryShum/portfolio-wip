@@ -7,62 +7,63 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        spaceGrotesk: ["Space Grotesk", "sans-serif"]
+        'archivo-narrow': "Archivo Narrow",
+        'league-spartan': "League Spartan"
       },
-      "colors": {
+      colors: {
         "Black": "#0e0e0c",
         "White": "#ffffff",
         "Light Grey": "#f4f4f4",
         "Charcoal(Text)": {
           "Light": "#eaeae9",
-          "Light :hover": "#dfdfdf",
-          "Light :active": "#bcbcbc",
+          "Light-hover": "#dfdfdf",
+          "Light-active": "#bcbcbc",
           "Normal": "#282827",
-          "Normal :hover": "#242423",
-          "Normal :active": "#20201f",
+          "Normal-hover": "#242423",
+          "Normal-active": "#20201f",
           "Dark": "#1e1e1d",
-          "Dark :hover": "#181817",
-          "Dark :active": "#121212",
+          "Dark-hover": "#181817",
+          "Dark-active": "#121212",
           "Darker": "#0e0e0e"
         },
         "Beigeish(BG)": {
           "Normal": "#e1d0bc",
-          "Normal :hover": "#cbbba9",
-          "Normal :active": "#b4a696",
+          "Normal-hover": "#cbbba9",
+          "Normal-active": "#b4a696",
           "Dark": "#a99c8d",
-          "Dark :hover": "#877d71",
-          "Dark :active": "#655e55",
+          "Dark-hover": "#877d71",
+          "Dark-active": "#655e55",
           "Darker": "#4f4942",
           "Light": "#fcfaf8",
-          "Light :hover": "#fbf8f5",
-          "Light :active": "#f6f0ea"
+          "Light-hover": "#fbf8f5",
+          "Light-active": "#f6f0ea"
         },
         "Brown(Secondary)": {
           "Light": "#ecebea",
-          "Light :hover": "#e3e1e0",
-          "Light :active": "#c4c1be",
+          "Light-hover": "#e3e1e0",
+          "Light-active": "#c4c1be",
           "Normal": "#41372d",
-          "Normal :hover": "#3b3229",
-          "Normal :active": "#342c24",
+          "Normal-hover": "#3b3229",
+          "Normal-active": "#342c24",
           "Dark": "#312922",
-          "Dark :hover": "#27211b",
-          "Dark :active": "#1d1914",
+          "Dark-hover": "#27211b",
+          "Dark-active": "#1d1914",
           "Darker": "#171310"
         },
         "Green": {
           "Light": "#edf0ee",
-          "Light :hover": "#e4e9e5",
-          "Light :active": "#c7d2c9",
+          "Light-hover": "#e4e9e5",
+          "Light-active": "#c7d2c9",
           "Normal": "#4a6d51",
-          "Normal :hover": "#436249",
-          "Normal :active": "#3b5741",
+          "Normal-hover": "#436249",
+          "Normal-active": "#3b5741",
           "Dark": "#38523d",
-          "Dark :hover": "#2c4131",
-          "Dark :active": "#213124",
+          "Dark-hover": "#2c4131",
+          "Dark-active": "#213124",
           "Darker": "#1a261c"
         }
       },
-      "fontSize": {
+      fontSize: {
         "xs": "0.75rem",
         "sm": "0.875rem",
         "base": "1rem",
@@ -74,11 +75,8 @@ export default {
         "5xl": "2.5rem",
         "6xl": "3rem"
       },
-      "fontFamily": {
-        "archivo-narrow": "Archivo Narrow",
-        "league-spartan": "League Spartan"
-      },
-      "boxShadow": {
+
+      boxShadow: {
         "xxsmall": "0px 1px 2px 0px rgba(0,0,0,0.05)",
         "xsmall": "0px 1px 2px 0px rgba(0,0,0,0.06), 0px 1px 3px 0px rgba(0,0,0,0.1)",
         "small": "0px 2px 4px -2px rgba(0,0,0,0.06), 0px 4px 8px -2px rgba(0,0,0,0.1)",
@@ -87,7 +85,7 @@ export default {
         "xlarge": "0px 24px 48px -12px rgba(0,0,0,0.18)",
         "xxlarge": "0px 32px 64px -12px rgba(0,0,0,0.14)"
       },
-      "borderRadius": {
+      borderRadius: {
         "none": "0",
         "xs": "0.1875rem",
         "sm": "0.25rem",
