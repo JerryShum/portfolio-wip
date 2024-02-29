@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+import { TextPlugin } from "gsap/TextPlugin";
 import gsap from "gsap";
 
 import Navbar from "../components/Navbar";
@@ -7,22 +8,44 @@ import Navbar from "../components/Navbar";
 function Hero() {
   const welcome = useRef(null);
   //Creates a reference for the root level element (used for scoping)
+  gsap.registerPlugin(TextPlugin);
 
   useGSAP(
     () => {
       const timeline = gsap.timeline();
 
-      timeline.from("#heading", {
-        opacity: 0,
-        duration: 1.5,
-      });
+      timeline
+        .from("#heading", {
+          opacity: 0,
+          translateY: 90,
+          duration: 1.5,
+          stagger: 0.5,
+        })
+        .from(
+          "#subhead-text",
+          {
+            opacity: 0,
+            translateY: 90,
+            duration: 1.5,
+          },
+          1
+        )
+        .to(
+          "#subhead-text",
+          {
+            duration: 3,
+            text: "Aspiring software engineer and front-end developer",
+            ease: "power1.inOut",
+          },
+          ""
+        );
     },
     { scope: welcome }
   );
 
   return (
     <div className="relative" ref={welcome}>
-      <div className="absolute right-10 top-10">
+      <div className="z-50 absolute right-10 top-10" id="nav-container">
         <Navbar />
       </div>
 
@@ -41,12 +64,14 @@ function Hero() {
             className=" inline-block pl-40 font-league-spartan border border-red-500"
             id="heading"
           >
-            {" "}
             Jerry Shum
           </span>
         </div>
-        <div className="text-center text-amber-900 text-2xl font-semibold border border-red-500 ">
-          <span>Aspiring front-end developer and software engineer.</span>
+        <div
+          className="text-center text-amber-900 text-2xl font-semibold border border-red-500 "
+          id="subhead-text"
+        >
+          <span>#######################################</span>
         </div>
       </div>
     </div>
