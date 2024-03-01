@@ -14,7 +14,7 @@ function Navbar() {
 
       gsap.from("#nav-link", {
         translateY: -200,
-        duration: 1,
+        duration: 1.5,
         stagger: 0.5,
       });
 
