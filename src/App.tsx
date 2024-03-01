@@ -19,10 +19,18 @@ function App() {
 
   return (
     <div>
-      <div>{introDone ? <Hero /> : <Intro />}</div>
-      {/* // if introDone = true, return Hero else return Intro
+      <div>
+        {introDone ? (
+          <div>
+            <Hero />
+            <Hero />
+          </div>
+        ) : (
+          <Intro />
+        )}
+      </div>
+      {/* // if introDone = true, return everything but the intro else return Intro
     // Intro -> state change -> render Hero after */}
-      <Hero />
     </div>
   );
 }
