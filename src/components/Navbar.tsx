@@ -42,7 +42,7 @@ function Navbar() {
       className="items-center justify-end border border-red-500 "
       ref={navbar}
     >
-      <nav className="flex flex-col gap-2 text-Charcoal(Text)-Normal text-2xl font-normal">
+      <nav className="flex flex-col gap-2 text-Charcoal(Text)-Normal text-2xl font-normal text-right">
         <a href="#" className="" id="nav-link">
           <span>About</span>
         </a>
