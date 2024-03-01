@@ -100,7 +100,7 @@ export default {
         "full": "9999px"
       },
       backgroundImage: {
-        'hero-bg': "url('/src/assets/Ellipse1.svg')",
+        'hero-bg': "url('/src/assets/hexagons.svg')",
       },
 
     },
