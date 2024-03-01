@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+import jerryImage from "../assets/jerry_oec.webp";
+
 function About() {
   const comp = useRef(null);
   //Creates a reference for the root level element (used for scoping)
@@ -36,6 +38,8 @@ function About() {
       <h1 className=" uppercase font-league-spartan font-semibold text-9xl mt-20">
         Who Am I?
       </h1>
+
+      <img src={jerryImage} className="w-1/4" />
     </div>
   );
 }
