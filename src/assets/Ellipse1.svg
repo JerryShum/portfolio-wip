@@ -1,0 +1,21 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<filter>
+<feturbulence></feturbulence>
+</filter>
+<circle cx="400" cy="400" r="400" fill="url(#paint0_linear_5768_331)"/>
+<circle cx="400" cy="400" r="400" fill="url(#pattern0)"/>
+<circle cx="400" cy="400" r="400" fill="url(#paint1_linear_5768_331)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1.28" height="1.28">
+<use xlink:href="#image0_5768_331" transform="scale(0.00125)"/>
+</pattern>
+<linearGradient id="paint0_linear_5768_331" x1="400" y1="0" x2="400" y2="800" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C0B2A0"/>
+<stop offset="0.51" stop-color="#E1D0BC"/>
+</linearGradient>
+<linearGradient id="paint1_linear_5768_331" x1="400" y1="0" x2="400" y2="800" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C0B2A0" stop-opacity="0.87"/>
+<stop offset="0.51" stop-color="#E1D0BC" stop-opacity="0.84"/>
+</linearGradient>
+</defs>
+</svg>

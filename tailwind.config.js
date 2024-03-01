@@ -98,7 +98,10 @@ export default {
         "5xl": "0.8125rem",
         "6xl": "1.1875rem",
         "full": "9999px"
-      }
+      },
+      backgroundImage: {
+        'hero-bg': "url('/src/assets/Ellipse1.svg')",
+      },
 
     },
   },
