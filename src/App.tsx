@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
+
 import Intro from "./layout/Intro";
 import Hero from "./layout/Hero";
-import { useEffect, useState } from "react";
+import About from "./layout/About";
 
 function App() {
   // Defining states for App component (initially set to false)
@@ -23,7 +25,7 @@ function App() {
         {introDone ? (
           <div>
             <Hero />
-            <Hero />
+            <About />
           </div>
         ) : (
           <Intro />
