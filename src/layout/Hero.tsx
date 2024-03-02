@@ -45,7 +45,7 @@ function Hero() {
 
   return (
     <section className="relative h-screen bg-Beigeish(BG)-Normal" ref={welcome}>
-      <div className="z-50 absolute right-10 top-10" id="nav-container">
+      <div className="z-auto absolute right-10 top-10" id="nav-container">
         <Navbar />
       </div>
 

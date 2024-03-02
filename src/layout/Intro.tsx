@@ -24,9 +24,6 @@ function Intro() {
         yPercent: "-100",
         duration: 0.6,
       });
-
-      const currentDuration = t1.duration();
-      console.log(currentDuration);
     },
     { scope: comp }
   );
