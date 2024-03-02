@@ -4,6 +4,7 @@ import { TextPlugin } from "gsap/TextPlugin";
 import gsap from "gsap";
 
 import Navbar from "../components/Navbar";
+import EllipseBG from "../assets/Ellipse_BG.png";
 
 function Hero() {
   const welcome = useRef(null);
@@ -44,7 +45,14 @@ function Hero() {
   );
 
   return (
-    <section className="relative h-screen bg-Beigeish(BG)-Normal" ref={welcome}>
+    <section
+      className="relative h-screen bg-Beigeish(BG)-Normal overflow-hidden"
+      ref={welcome}
+    >
+      <img
+        src={EllipseBG}
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-125"
+      />
       <div className="z-auto absolute right-10 top-10" id="nav-container">
         <Navbar />
       </div>
