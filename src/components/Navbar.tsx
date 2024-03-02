@@ -10,23 +10,35 @@ function Navbar() {
 
   useGSAP(
     () => {
-      const links = navbar.current.querySelectorAll("#nav-link");
+      const links = gsap.utils.toArray("#nav-link");
 
       gsap.from("#nav-link", {
         translateX: 200,
+        opacity: 0.1,
         duration: 1.4,
         stagger: 0.5,
       });
 
       links.forEach((link) => {
         link.addEventListener("mouseenter", () => {
+          gsap.to(links, {
+            opacity: 0.5,
+            duration: 0.5,
+          });
+
           gsap.to(link, {
+            opacity: 1,
             duration: 0.5,
             scale: 1.5,
           });
         });
 
         link.addEventListener("mouseleave", () => {
+          gsap.to(links, {
+            opacity: 1,
+            duration: 0.5,
+          });
+
           gsap.to(link, {
             duration: 0.5,
             scale: 1,
