@@ -10,54 +10,46 @@ function Navbar() {
 
   useGSAP(
     () => {
-      const links = gsap.utils.toArray("#navLink");
-      const tl = gsap.timeline();
+      const links = navbar.current.querySelectorAll("#nav-link");
 
-      tl.from(links, {
-        translateY: -200,
-        duration: 1,
+      gsap.from("#nav-link", {
+        translateX: 200,
+        duration: 1.4,
         stagger: 0.5,
       });
 
-      // links.forEach((link) => {
-      //   link.addEventListener("mouseenter", () => {
-      //     gsap.to(links, {
-      //       opacity: 0.5,
-      //       duration: 0.5,
-      //     });
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          gsap.to(link, {
+            duration: 0.5,
+            scale: 1.5,
+          });
+        });
 
-      //     gsap.to(link, {
-      //       duration: 0.5,
-      //       opacity: 1,
-      //       scale: 1.5,
-      //     });
-      //   });
-
-      //   link.addEventListener("mouseleave", () => {
-      //     gsap.to(link, {
-      //       duration: 0.5,
-      //       opacity: 1,
-      //       scale: 1,
-      //     });
-      //   });
-      // });
+        link.addEventListener("mouseleave", () => {
+          gsap.to(link, {
+            duration: 0.5,
+            scale: 1,
+          });
+        });
+      });
     },
     { scope: navbar }
   );
 
   return (
-    <div className="items-center justify-end border border-red-500 ">
-      <nav
-        className="flex flex-col gap-2 text-Charcoal(Text)-Normal text-2xl font-normal text-right"
-        ref={navbar}
-      >
-        <a href="#" className="" id="navLink">
+    <div
+      className="items-center justify-end border border-red-500 "
+      ref={navbar}
+    >
+      <nav className="flex flex-col gap-2 text-Charcoal(Text)-Normal text-2xl font-normal text-right">
+        <a href="#" className="" id="nav-link">
           <span>About</span>
         </a>
-        <a href="#" className="" id="navLink">
+        <a href="#" className="" id="nav-link">
           <span>Works</span>
         </a>
-        <a href="#" className="" id="navLink">
+        <a href="#" className="" id="nav-link">
           <span>Contact </span>
         </a>
       </nav>
