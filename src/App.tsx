@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 
 import Intro from "./layout/Intro";
 import Hero from "./layout/Hero";
@@ -20,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <ReactLenis root>
       <div>
         {introDone ? (
           <div>
@@ -33,7 +34,7 @@ function App() {
       </div>
       {/* // if introDone = true, return everything but the intro else return Intro
     // Intro -> state change -> render Hero after */}
-    </div>
+    </ReactLenis>
   );
 }
 
