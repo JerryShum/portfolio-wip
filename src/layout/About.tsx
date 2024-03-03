@@ -1,26 +1,34 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import jerryOEC from "../assets/jerry_oec.webp";
-import jerryGame from "../assets/Jerry_Game.webp";
+import JerryOEC from "../assets/jerry_oec_resized.jpeg";
+import JerryGame from "../assets/Jerry_Game_resized.jpeg";
+import JerryOECPlaceholder from "../assets/Jerry_OEC_Placeholder.jpeg";
+import JerryGamePlaceholder from "../assets/Jerry_Game_Placeholder.jpeg";
 
 function About() {
   return (
-    <div className="relative h-screen w-full p-20 ">
+    <div className="relative h-screen w-full">
       <h1 className=" uppercase font-league-spartan font-semibold text-9xl">
         Who Am I?
       </h1>
-      <img
-        src={jerryOEC}
-        className="w-1/3  absolute top-1/3 m-auto left-0 right-0  border rounded-[30px] border-red-500"
-        id="#sliding-image"
-      />
-      <img
-        src={jerryGame}
-        className="w-1/3 absolute top-1/3 m-auto left-0 right-0 border rounded-[30px] border-red-500"
-        id="#sliding-image"
-      />
+
+      <div className="flex">
+        <LazyLoadImage
+          src={JerryOEC}
+          className="h-auto w-1/3 top-6/12 left-0 right-0  border rounded-[30px] border-red-500"
+          id="#sliding-image"
+          placeholderSrc={JerryOECPlaceholder}
+        />
+        <LazyLoadImage
+          src={JerryGame}
+          className="h-auto w-1/3 top-6/12 left-0 right-0 border rounded-[30px] border-red-500"
+          id="#sliding-image"
+          placeholderSrc={JerryGamePlaceholder}
+        />
+      </div>
     </div>
   );
 }
