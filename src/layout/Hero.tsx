@@ -16,11 +16,17 @@ function Hero() {
       const timeline = gsap.timeline();
 
       timeline
+
         .from("#heading", {
           opacity: 0,
           translateY: 90,
           duration: 1.5,
           stagger: 0.5,
+        })
+        .from("#img-bg", {
+          opacity: 0,
+          translateY: 100,
+          duration: 1,
         })
         .from(
           "#subhead-text",
@@ -52,6 +58,7 @@ function Hero() {
       <img
         src={EllipseBG}
         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-125"
+        id="img-bg"
       />
       <div className="z-auto absolute right-10 top-10" id="nav-container">
         <Navbar />
@@ -76,7 +83,7 @@ function Hero() {
           className="text-center text-amber-900 text-2xl font-semibold border border-red-500 "
           id="subhead-text"
         >
-          <span>#######################################</span>
+          <span>#################</span>
         </div>
       </div>
     </section>
