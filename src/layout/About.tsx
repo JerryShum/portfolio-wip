@@ -13,11 +13,13 @@ function About() {
       </h1>
       <img
         src={jerryOEC}
-        className="absolute top-1/2 left-1/2 w-1/3 border rounded-[30px] border-red-500"
+        className="w-1/3  absolute top-1/3 m-auto left-0 right-0  border rounded-[30px] border-red-500"
+        id="#sliding-image"
       />
       <img
         src={jerryGame}
-        className="absolute top-1/2 left-1/2 w-1/3 border rounded-[30px] border-red-500"
+        className="w-1/3 absolute top-1/3 m-auto left-0 right-0 border rounded-[30px] border-red-500"
+        id="#sliding-image"
       />
     </div>
   );
