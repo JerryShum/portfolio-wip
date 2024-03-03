@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 
+import Placeholder from "./layout/Placeholder";
 import Intro from "./layout/Intro";
 import Hero from "./layout/Hero";
 import About from "./layout/About";
@@ -27,6 +28,7 @@ function App() {
           <div>
             <Hero />
             <About />
+            <Placeholder />
           </div>
         ) : (
           <Intro />
