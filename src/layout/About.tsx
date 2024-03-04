@@ -19,7 +19,7 @@ function About() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#section-start",
-        markers: true,
+        // markers: true,
         start: "top top",
         scrub: true,
         pin: true,
@@ -38,10 +38,14 @@ function About() {
       },
       "<"
     );
-  }, []);
+  });
 
   return (
-    <div className=" w-full bg-black" id="section-start" ref={aboutScope}>
+    <section
+      className=" w-full bg-black border border-black rounded-[20px]"
+      id="section-start"
+      ref={aboutScope}
+    >
       <div className="relative">
         <div className="h-screen flex flex-col justify-center items-center">
           <h1 className="uppercase font-league-spartan font-semibold text-9xl ">
@@ -71,7 +75,7 @@ function About() {
 
         <div className="h-screen"></div>
       </div>
-    </div>
+    </section>
   );
 }
 
