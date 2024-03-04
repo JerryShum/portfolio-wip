@@ -4,8 +4,6 @@ import gsap from "gsap";
 
 import JerryOEC from "../assets/jerry_oec_resized.jpeg";
 import JerryGame from "../assets/Jerry_Game_resized.jpeg";
-import JerryOECPlaceholder from "../assets/Jerry_OEC_Placeholder.jpeg";
-import JerryGamePlaceholder from "../assets/Jerry_Game_Placeholder.jpeg";
 
 function About() {
   const imageRef1 = useRef(null);
@@ -29,17 +27,15 @@ function About() {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <img
           src={JerryOEC}
-          className="h-[800px] w-[640px] object-cover rounded-[30px] border border-red-500 z-10"
+          className="h-[800px] w-[640px] rotate-3 object-cover rounded-[30px] border border-red-500 z-10"
           id="#sliding-image1"
           ref={imageRef1}
-          // placeholderSrc={JerryOECPlaceholder}
         />
         <img
           src={JerryGame}
-          className="h-[800] w-[640] object-cover rounded-[30px] border border-red-500 absolute top-0 left-0 z-20"
+          className="h-[800] w-[640] -rotate-3 object-cover rounded-[30px] border border-red-500 absolute top-0 left-0 z-20"
           id="#sliding-image2"
           ref={imageRef2}
-          // placeholderSrc={JerryGamePlaceholder}
         />
       </div>
     </div>
