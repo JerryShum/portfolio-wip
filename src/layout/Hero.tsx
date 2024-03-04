@@ -41,7 +41,7 @@ function Hero() {
           "#subhead-text",
           {
             duration: 3,
-            text: "Aspiring software engineer and front-end developer.",
+            text: "Software engineering student and aspiring developer.",
             ease: "power1.inOut",
           },
           ""

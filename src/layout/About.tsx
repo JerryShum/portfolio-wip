@@ -15,16 +15,16 @@ function About() {
         Who Am I?
       </h1>
 
-      <div className="flex">
+      <div className="relative">
         <LazyLoadImage
           src={JerryOEC}
-          className="h-auto w-1/3 top-6/12 left-0 right-0  border rounded-[30px] border-red-500"
+          className="absolute h-auto w-1/3 top-6/12 left-0 right-0  border rounded-[30px] border-red-500"
           id="#sliding-image"
           placeholderSrc={JerryOECPlaceholder}
         />
         <LazyLoadImage
           src={JerryGame}
-          className="h-auto w-1/3 top-6/12 left-0 right-0 border rounded-[30px] border-red-500"
+          className="absolute h-auto w-1/3 top-6/12 left-0 right-0 border rounded-[30px] border-red-500"
           id="#sliding-image"
           placeholderSrc={JerryGamePlaceholder}
         />
