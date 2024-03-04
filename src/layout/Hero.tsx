@@ -16,7 +16,6 @@ function Hero() {
       const timeline = gsap.timeline();
 
       timeline
-
         .from("#heading", {
           opacity: 0,
           translateY: 90,
@@ -52,7 +51,7 @@ function Hero() {
 
   return (
     <section
-      className="relative h-screen bg-Beigeish(BG)-Normal overflow-hidden"
+      className="relative bg-Beigeish(BG)-Normal overflow-hidden"
       ref={welcome}
     >
       <img
