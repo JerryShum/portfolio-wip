@@ -45,6 +45,21 @@ function Hero() {
           },
           ""
         );
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: welcome.current,
+          start: "bottom bottom",
+          // end: "bottom top",
+          scrub: true,
+          // pin: true,
+        },
+      });
+
+      tl.to(welcome.current, {
+        opacity: 0,
+        translateY: 400,
+      });
     },
     { scope: welcome }
   );
