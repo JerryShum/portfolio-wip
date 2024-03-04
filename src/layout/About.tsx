@@ -12,11 +12,36 @@ function About() {
   const imageRef2 = useRef(null);
 
   useGSAP(() => {
-    const image = imageRef.current;
+    const image1 = imageRef1.current;
+    const image2 = imageRef2.current;
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#section-start",
+        markers: true,
+        start: "top top",
+        scrub: true,
+        pin: true,
+      },
+    });
+
+    tl.to(image1, {
+      translateX: 700,
+      duration: 20,
+    });
+
+    tl.to(
+      image2,
+      {
+        translateX: -700,
+        duration: 20,
+      },
+      "<"
+    );
   }, []);
 
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-screen w-full" id="section-start">
       <div className="h-screen flex flex-col justify-center items-center">
         <h1 className="uppercase font-league-spartan font-semibold text-9xl ">
           Who Am I?
@@ -27,14 +52,14 @@ function About() {
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <img
           src={JerryOEC}
-          className="h-[800px] w-[640px] rotate-3 object-cover rounded-[30px] border border-red-500 z-10"
-          id="#sliding-image1"
+          className="h-[800px] w-[640px] rotate-2 object-cover rounded-[30px] border border-red-500 z-10"
+          id="#sliding-image"
           ref={imageRef1}
         />
         <img
           src={JerryGame}
-          className="h-[800] w-[640] -rotate-3 object-cover rounded-[30px] border border-red-500 absolute top-0 left-0 z-20"
-          id="#sliding-image2"
+          className="h-[800] w-[640] -rotate-2 object-cover rounded-[30px] border border-red-500 absolute top-0 left-0 z-20"
+          id="#sliding-image"
           ref={imageRef2}
         />
       </div>
