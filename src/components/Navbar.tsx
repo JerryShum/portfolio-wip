@@ -15,7 +15,7 @@ function Navbar() {
       gsap.from("#nav-link", {
         translateX: 200,
         opacity: 0.1,
-        duration: 1.4,
+        duration: 1,
         stagger: 0.5,
       });
 
@@ -50,10 +50,7 @@ function Navbar() {
   );
 
   return (
-    <div
-      className="items-center justify-end border border-red-500 "
-      ref={navbar}
-    >
+    <div className="items-center justify-end  " ref={navbar}>
       <nav className="flex flex-col gap-2 text-Charcoal(Text)-Normal text-2xl font-normal text-right">
         <a href="#" className="" id="nav-link">
           <span>About</span>

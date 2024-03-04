@@ -20,20 +20,20 @@ function Hero() {
         .from("#heading", {
           opacity: 0,
           translateY: 90,
-          duration: 1.5,
+          duration: 1,
           stagger: 0.5,
         })
         .from("#img-bg", {
           opacity: 0,
-          translateY: 100,
-          duration: 1.5,
+          translateY: 200,
+          duration: 1,
         })
         .from(
           "#subhead-text",
           {
             opacity: 0,
             translateY: 90,
-            duration: 1.5,
+            duration: 1,
           },
           1
         )
@@ -66,25 +66,25 @@ function Hero() {
       </div>
 
       <div className="h-screen flex flex-col justify-center">
-        <div className="flex flex-col text-[175px] leading-none text-Charcoal(Text)-Normal font-bold text-center uppercase border border-red-500">
+        <div className="flex flex-col text-[175px] leading-none text-Charcoal(Text)-Normal font-bold text-center uppercase ">
           <span
-            className=" inline-block pr-40 font-league-spartan border border-red-500"
+            className=" inline-block pr-40 font-league-spartan "
             id="heading"
           >
             Hi There, I'm
           </span>
           <span
-            className=" inline-block pl-40 font-league-spartan border border-red-500"
+            className=" inline-block pl-40 font-league-spartan "
             id="heading"
           >
             Jerry Shum
           </span>
         </div>
         <div
-          className="text-center text-amber-900 text-2xl font-semibold border border-red-500 "
+          className="text-center text-amber-900 text-2xl font-semibold  "
           id="subhead-text"
         >
-          <span> </span>
+          <span>&nbsp;</span>
         </div>
       </div>
     </section>
