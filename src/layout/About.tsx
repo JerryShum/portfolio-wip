@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 import JerryOEC from "../assets/jerry_oec_resized.jpeg";
 import JerryGame from "../assets/Jerry_Game_resized.jpeg";
@@ -9,11 +11,9 @@ function About() {
   const imageRef1 = useRef(null);
   const imageRef2 = useRef(null);
 
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // useGSAP(() => {
-  //   const image = imageRef.current;
-  // }, []);
+  useGSAP(() => {
+    const image = imageRef.current;
+  }, []);
 
   return (
     <div className="relative h-screen w-full">
