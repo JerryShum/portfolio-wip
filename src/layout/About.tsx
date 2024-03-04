@@ -8,6 +8,7 @@ import JerryOEC from "../assets/jerry_oec_resized.jpeg";
 import JerryGame from "../assets/Jerry_Game_resized.jpeg";
 
 function About() {
+  const aboutScope = useRef(null);
   const imageRef1 = useRef(null);
   const imageRef2 = useRef(null);
 
@@ -18,7 +19,7 @@ function About() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#section-start",
-        // markers: true,
+        markers: true,
         start: "top top",
         scrub: true,
         pin: true,
@@ -40,7 +41,7 @@ function About() {
   }, []);
 
   return (
-    <div className=" w-full" id="section-start">
+    <div className=" w-full bg-black" id="section-start" ref={aboutScope}>
       <div className="relative">
         <div className="h-screen flex flex-col justify-center items-center">
           <h1 className="uppercase font-league-spartan font-semibold text-9xl ">
@@ -53,7 +54,7 @@ function About() {
           </p>
           <span className="w-1/4 mt-10 border border-red-500"></span>
         </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img
             src={JerryOEC}
             className="h-[800px] w-[640px] rotate-2 object-cover rounded-[30px] z-10"
@@ -67,6 +68,8 @@ function About() {
             ref={imageRef2}
           />
         </div>
+
+        <div className="h-screen"></div>
       </div>
     </div>
   );
