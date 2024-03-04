@@ -15,8 +15,7 @@
     "@studio-freight/react-lenis": "^0.0.45",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-lazy-load-image-component": "^1.6.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
