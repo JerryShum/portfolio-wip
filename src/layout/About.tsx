@@ -29,7 +29,6 @@ function About() {
       translateX: 700,
       duration: 20,
     });
-
     tl.to(
       image2,
       {
@@ -42,21 +41,28 @@ function About() {
 
   return (
     <div className=" w-full" id="section-start">
-      <div className="relative h-screen flex flex-col justify-center items-center">
-        <h1 className="uppercase font-league-spartan font-semibold text-9xl ">
-          Who Am I?
-        </h1>
-        <span>Hello World!</span>
+      <div className="relative">
+        <div className="h-screen flex flex-col justify-center items-center">
+          <h1 className="uppercase font-league-spartan font-semibold text-9xl ">
+            Who Am I?
+          </h1>
+          <p className="w-[500px] text-center font-archivo-narrow text-2xl">
+            I believe in hard work and constantly pursue <br />
+            self-improvement, which I strive to achieve through constant
+            learning and overcoming challenges.
+          </p>
+          <span className="w-1/4 mt-10 border border-red-500"></span>
+        </div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img
             src={JerryOEC}
-            className="h-[800px] w-[640px] rotate-2 object-cover rounded-[30px] border border-red-500 z-10"
+            className="h-[800px] w-[640px] rotate-2 object-cover rounded-[30px] z-10"
             id="#sliding-image"
             ref={imageRef1}
           />
           <img
             src={JerryGame}
-            className="h-[800] w-[640] -rotate-2 object-cover rounded-[30px] border border-red-500 absolute top-0 left-0 z-20"
+            className="h-[800px] w-[640px] -rotate-2 object-cover rounded-[30px] absolute top-0 left-0 z-20"
             id="#sliding-image"
             ref={imageRef2}
           />
