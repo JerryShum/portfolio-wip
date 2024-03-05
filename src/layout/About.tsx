@@ -20,21 +20,19 @@ function About() {
       scrollTrigger: {
         trigger: "#section-start",
         // markers: true,
-        start: "top top",
+        start: "top top", //starts when top of trigger hits top of view port
         scrub: true,
         pin: true,
       },
     });
 
     tl.to(image1, {
-      translateX: 700,
-      duration: 20,
+      translateX: 650,
     });
     tl.to(
       image2,
       {
-        translateX: -700,
-        duration: 20,
+        translateX: -650,
       },
       "<"
     );
@@ -48,7 +46,7 @@ function About() {
     >
       <div className="relative">
         <div className="h-screen flex flex-col justify-center items-center">
-          <h1 className="uppercase font-league-spartan font-semibold text-9xl ">
+          <h1 className="uppercase font-league-spartan font-semibold text-8xl ">
             Who Am I?
           </h1>
           <p className="w-[500px] text-center font-archivo-narrow text-2xl">
@@ -73,7 +71,18 @@ function About() {
           />
         </div>
 
-        <div className="h-screen"></div>
+        <div className="h-screen border border-red-500">
+          <div className="flex mt-20 px-20">
+            <h1 className="uppercase font-league-spartan font-semibold text-8xl">
+              What I Do.
+            </h1>
+            <div>
+              <div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
