@@ -73,7 +73,8 @@ export default {
         "3xl": "2rem",
         "4xl": "2.25rem",
         "5xl": "2.5rem",
-        "6xl": "3rem"
+        "6xl": "3rem",
+        "8xl": "7.5rem",
       },
 
       boxShadow: {
