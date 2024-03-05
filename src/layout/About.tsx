@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 import JerryOEC from "../assets/jerry_oec_resized.jpeg";
 import JerryGame from "../assets/Jerry_Game_resized.jpeg";
+import AboutCard from "../components/AboutCard";
 
 function About() {
   const aboutScope = useRef(null);
@@ -44,7 +45,7 @@ function About() {
       id="section-start"
       ref={aboutScope}
     >
-      <div className="relative">
+      <div className="relative overflow-clip">
         <div className="h-screen flex flex-col justify-center items-center">
           <h1 className="uppercase font-league-spartan font-semibold text-8xl ">
             Who Am I?
@@ -72,14 +73,14 @@ function About() {
         </div>
 
         <div className="h-screen border border-red-500">
-          <div className="flex mt-20 px-20">
-            <h1 className="uppercase font-league-spartan font-semibold text-8xl">
-              What I Do.
-            </h1>
+          <div className="flex flex-col mt-20 px-20">
             <div>
-              <div>
-              </div>
+              <h1 className="uppercase font-league-spartan font-semibold text-8xl border-b-2 border-Charcoal(Text)-Normal">
+                What I Do.
+              </h1>
             </div>
+            <div className="mt-20" id="card-holder">
+              <AboutCard />
             </div>
           </div>
         </div>
