@@ -2,24 +2,44 @@ import React from "react";
 
 function AboutCard() {
   return (
-    <div className="flex gap-40">
-      <div className="flex flex-col">
-        <h2 className="text-7xl font-semibold font-league-spartan">
-          {" "}
+    <div className="">
+      <div className="flex gap-x-5 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-[50px] h-[50px]"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+          />
+        </svg>
+
+        <h2 className="py-7 text-7xl font-semibold font-league-spartan ">
           Web Development
         </h2>
-        <p className="text-balance text-xl">
+      </div>
+      <div className="grid grid-cols-12 gap-x-20">
+        <p className=" col-span-6 text-balance text-2xl font-archivo-narrow text-gray-400">
           I am currently in the process of improving my web-development skills.
           I love using tools and frameworks such as Figma and React to aid in my
           web development journey.
         </p>
-      </div>
-      <div className="flex flex-col">
-        <span className="text-6xl font-archivo-narrow">Learning Figma</span>
-        <span className="text-6xl font-archivo-narrow">Using Gsap</span>
-        <span className="text-6xl font-archivo-narrow">
-          Intricacies of React
-        </span>
+        <div className="col-span-6 flex basis-1/2 flex-col">
+          <span className="text-6xl font-archivo-narrow font-bold">
+            Learning Figma
+          </span>
+          <span className="text-6xl font-archivo-narrow font-bold">
+            Using Gsap
+          </span>
+          <span className="text-6xl font-archivo-narrow font-bold">
+            Intricacies of React
+          </span>
+        </div>
       </div>
     </div>
   );
