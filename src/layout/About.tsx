@@ -29,11 +29,13 @@ function About() {
 
     tl.to(image1, {
       translateX: 650,
+      rotation: 8,
     });
     tl.to(
       image2,
       {
         translateX: -650,
+        rotation: -8,
       },
       "<"
     );
